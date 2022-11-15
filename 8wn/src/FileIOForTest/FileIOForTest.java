@@ -17,7 +17,7 @@ interface SELECT_MENU
 }
 
 public class FileIOForTest {
-	private final static String FILE_NAME = "Person.bin";
+	private final static String FILE_NAME = "Person.txt";
 	
 	static Scanner scan = new Scanner(System.in);
 
@@ -55,15 +55,17 @@ public class FileIOForTest {
 						for(int i = 0; i < readPeople.size(); i++) {
 							readPeople.get(i).showPersonInfo();
 						}
+						break;
 					} catch (IOException e) {
 						e.printStackTrace();
 					}
-					break;
+					
 					
 				case SELECT_MENU.EXIT:
 					System.out.println("프로그램을 종료합니다.");
 					return;	
 			}
+			System.out.println();
 		
 		}
 		
