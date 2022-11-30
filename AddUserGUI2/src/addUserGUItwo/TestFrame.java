@@ -57,7 +57,7 @@ public class TestFrame extends JFrame {
 	
 	void buttonClick() {
 		StringBuilder stb = new StringBuilder();
-		String selectedRbtnWord = null;
+		String selectedComboWord = null;
 		if(typeCombo.getSelectedIndex() == 0) {
 			warringMessage("콤보박스를 선택하세요.");
 			return;         	
@@ -68,8 +68,8 @@ public class TestFrame extends JFrame {
 			warringMessage("이름을 입력하세요.");
 			return;
 		}
-		selectedRbtnWord = typeCombo.getSelectedItem().toString();
-		stb.append("id:").append(stuNumTF.getText()).append(", ").append("type: ").append(selectedRbtnWord).append(", ").append("name: ").append(nameTF.getText()).append("\n");
+		selectedComboWord = typeCombo.getSelectedItem().toString();
+		stb.append("id:").append(stuNumTF.getText()).append(", ").append("type: ").append(selectedComboWord).append(", ").append("name: ").append(nameTF.getText()).append("\n");
 		addedUserTA.append(stb.toString());
 		setBlank();
 	}

@@ -78,5 +78,4 @@ public class TestFrame extends JFrame {
 		}
 		imageLabel.setIcon(images[currImgIndex]);
 	}
-
 }
